@@ -1,0 +1,23 @@
+<?php
+//Configuration of timezine
+define('CONFIG_TIMEZONE', 'Europe/Amsterdam');
+  
+//Configuration of the homewizard
+define('CONFIG_HW_HOST', '192.168.1.1');
+define('CONFIG_HW_PORT', '80');
+define('CONFIG_HW_PASSWORD', 'secret');
+	
+//Configuration of Philips HUE
+define('CONFIG_HUE_HOST', '192.168.1.2');
+define('CONFIG_HUE_USER', 'newdeveloper');
+	
+//Configure database location
+define('CONFIG_DB_HOSTNAME', '127.0.0.1');
+define('CONFIG_DB_DATABASE', 'rhas');
+define('CONFIG_DB_USERNAME', 'root');
+define('CONFIG_DB_PASSWORD', '');
+  
+//Configure PushOver keys
+define('CONFIG_PUSHOVER_APPTOKEN', 'app_token');
+define('CONFIG_PUSHOVER_USERKEY', 'user_key');
+?>
