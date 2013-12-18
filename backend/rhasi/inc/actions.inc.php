@@ -1,4 +1,6 @@
-<?php  
+<?php
+require_once(dirname(__FILE__) . "/../../inc/commons.inc.php");
+  
   /**
    * Runs the given actions, for example:
    

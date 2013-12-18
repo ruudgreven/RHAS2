@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Switch two lights on and off 3 times -->
 <action id="twolights">
-  <par>
-    <deviceaction type="kaku" id="livingroom">
-      <status>on</status>
-      <time>1000</time>
-    </deviceaction>
-    <deviceaction type="hue" id="kitchen">
-      <status>on</status>
-      <rgb>#FFDDDD</rgb>
-      <time>1000</time>
-    </deviceaction>
-  </par>
+  <seq loop="3">
+    <par>
+      <deviceaction type="kaku" name="livingroom">
+        <status>on</status>
+        <time>1000</time>
+      </deviceaction>
+      <deviceaction type="hue" name="kitchen">
+        <status>on</status>
+        <rgb>#FFDDDD</rgb>
+        <time>1000</time>
+      </deviceaction>
+    </par>
+    
+    <par>
+      <deviceaction type="kaku" name="livingroom">
+        <status>off</status>
+        <time>3000</time>
+      </deviceaction>
+      <deviceaction type="hue" name="kitchen">
+        <status>off</status>
+        <time>3000</time>
+      </deviceaction>
+    </par>
+  </seq>
 </action>

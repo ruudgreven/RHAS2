@@ -1,5 +1,4 @@
 <?php
-  require_once(dirname(__FILE__) . "/commons.inc.php");
   require_once(dirname(__FILE__) . "/inc/actions.inc.php");
 
   function __autoload($sClassName) {
