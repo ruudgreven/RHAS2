@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action id="twolights">
+  <par>
+    <deviceaction type="kaku" id="livingroom">
+      <status>on</status>
+      <time>1000</time>
+    </deviceaction>
+    <deviceaction type="hue" id="kitchen">
+      <status>on</status>
+      <rgb>#FFDDDD</rgb>
+      <time>1000</time>
+    </deviceaction>
+  </par>
+</action>
