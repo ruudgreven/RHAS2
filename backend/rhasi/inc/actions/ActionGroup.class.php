@@ -21,6 +21,10 @@ abstract class ActionGroup extends Action {
           $oKakuAction = new DeviceActionKaku();
           $oKakuAction->readXml($oChild);
           array_push($this->_aChildren, $oKakuAction);
+        } else if ($oChild->getAttribute("type") == "hue") {
+          $oHueAction = new DeviceActionHue();
+          $oHueAction->readXml($oChild);
+          array_push($this->_aChildren, $oHueAction);
         }
       }
     }

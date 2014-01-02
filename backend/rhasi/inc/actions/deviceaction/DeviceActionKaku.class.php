@@ -19,12 +19,14 @@ class DeviceActionKaku extends Action {
       $stmt->fetch();
       $stmt->close();
       
-      //Send request to homewizard
-      $sUrl = "http://" . CONFIG_HW_HOST . ":" . CONFIG_HW_PORT . "/" . CONFIG_HW_PASSWORD . "/sw/" . $sId . "/" . $this->_sStatus;  
     
+      //Prepare request  
+      $sUrl = "http://" . CONFIG_HW_HOST . ":" . CONFIG_HW_PORT . "/" . CONFIG_HW_PASSWORD . "/sw/" . $sId . "/" . $this->_sStatus;  
+      
       if ($bTest) {
         echo "DEVICEACTION KAKU CONNECT: " . $sUrl . "\n";
       } else {
+         //Send request to kaku bulbs
         $oData = getJSON($sUrl);
       } 
     }
