@@ -86,13 +86,20 @@
 		}
 	</style>
 	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript">
-	
+	  function startAction(actionname) {
+	    $.ajax({
+        url: "api/actions/" + actionname + "/start",
+      }).done(function( data ) {
+        //TODO: Handle answer
+      });
+	  }
 	</script>
 </head>
 <body>
 <?php foreach ($aContent as $aItem) { ?>
-    <div class="button button-<?php echo $aItem["color"] ?>">
+    <div class="button button-<?php echo $aItem["color"] ?>" onClick="startAction('<?php echo $aItem['action'] ?>');">
     <?php
       if (strpos($aItem['icon'], 'fa-') === 0) {
         echo "<i class=\"fa " . $aItem['icon'] . "\"></i>";

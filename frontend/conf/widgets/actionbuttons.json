@@ -5,7 +5,7 @@
       "title": "Sfeer",
       "icon": "home.png",
       "color": "red",
-      "action": "test.xml"
+      "action": "sfeer"
     },
     {
       "title": "Sleep",
