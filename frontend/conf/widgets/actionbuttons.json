@@ -1,0 +1,17 @@
+{
+  "type": "actionbuttons",
+  "content": [
+    {
+      "title": "Sfeer",
+      "icon": "home.png",
+      "color": "red",
+      "action": "test.xml"
+    },
+    {
+      "title": "Sleep",
+      "icon": "fa-moon-o",
+      "color": "green",
+      "action": "test.xml"
+    }
+  ]
+}
