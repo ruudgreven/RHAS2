@@ -2,6 +2,24 @@
 require_once(dirname(__FILE__) . "/../../config.inc.php");
 
 /**
+ * Class autoloader
+ */
+function __autoload($sClassName) {
+  //class directories
+  $aDirecties = array(
+    dirname(__FILE__) . "/../rhasi/inc/actions/",
+    dirname(__FILE__) . "/../rhasi/inc/actions/deviceaction/",
+  );
+      
+  foreach($aDirecties as $sDirectory) {
+    if(file_exists($sDirectory.$sClassName . ".class.php")) {
+      require_once($sDirectory.$sClassName . ".class.php");
+      return;
+    }            
+  }
+}
+  
+/**
  * An interface for the subscripts
  */
 interface iSubscript
