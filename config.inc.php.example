@@ -1,4 +1,7 @@
 <?php
+//Configuration of RHAS
+define('CONFIG_RHAS2_PATH', 'Path to RHAS2');
+
 //Configuration of timezine
 define('CONFIG_TIMEZONE', 'Europe/Amsterdam');
   
