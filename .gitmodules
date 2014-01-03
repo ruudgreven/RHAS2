@@ -1,0 +1,3 @@
+[submodule "lib/flight"]
+	path = lib/flight
+	url = https://github.com/mikecao/flight.git
